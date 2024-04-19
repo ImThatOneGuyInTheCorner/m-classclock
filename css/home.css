@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
     background-image: url('../img/chsImg.png');
     background-position: center;
@@ -6,4 +8,53 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 4em;
+    color: #ffffff;
+    
+}
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.7em;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20em;
+}
+
+a {
+    display: flex;
+    background-color: #1246ff;
+    width: 8em;
+    height: 3em;
+    text-align: center;
+    justify-content: center;
+}
+.btn {
+    height: fit-content;
+    align-self: center;
+    color: #ffffff;
+    font-family: "JetBrains Mono", monospace;
+    text-decoration-style: none;
+}
+.btnCont {
+    height: fit-content;
+}
+#divider {
+    background-color: #000000;
+    width: .2em;
 }
