@@ -29,7 +29,17 @@ function count() {
     if (sec < 10) {
         sec = '0'+sec
     };
-    console.log(`${theDate}, ${hrs}:${min}:${sec}`)
+
+    let target = [12, 36, 60]
+    hrs = (target[0] - parseInt(hrs));
+    min = (target[1] - parseInt(min));
+    if(min < 0) {
+        hrs--
+        min += 60;
+    }
+    sec = (target[2] - parseInt(sec));
+    // console.log(`${theDate}, ${hrs}:${min}:${sec}`)
+    console.log(`${hrs}:${min}:${sec}`)
 }
 
 setInterval(count, 1000)
