@@ -30,7 +30,8 @@ function count() {
         sec = '0'+sec
     };
 
-    let target = [12, 36, 60]
+    // let target = [12, 36, 60]
+    let target = [10, 45, 60]
     hrs = (target[0] - parseInt(hrs));
     min = (target[1] - parseInt(min));
     if(min < 0) {
