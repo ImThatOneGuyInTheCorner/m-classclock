@@ -90,7 +90,7 @@ function count() {
     let sec = (time.getSeconds());
 
     // Update what it's tracking
-    let target = schedules[schedule].Fourth
+    let target = schedules[schedule].Lunch
 
     hrsD = (target[0] - parseInt(hrs));
     secD = (target[2] - parseInt(sec));
@@ -148,7 +148,7 @@ function count() {
     document.getElementById(`dateTime`).innerText = `${theDate}, ${hrs}:${min}:${sec}`;
     
     // Make the text update
-    document.getElementById(`until`).innerText = `Time until period 4 ends (${targetHrs}:${targetMin}:${targetSec}):`
+    document.getElementById(`until`).innerText = `Time until lunch ends (${targetHrs}:${targetMin}:${targetSec}):`
     document.getElementById(`date`).innerText = `Date and Time:`
 }
 
