@@ -80,9 +80,9 @@ const schedules = {
     }
 }
 
-let schedule = document.getElementById(`dailySchedule`).innerText
 
 function count() {
+    let schedule = document.getElementById(`dailySchedule`).innerText
     const theDate = new Date().toLocaleDateString('en-us', { weekday:"short", month:"numeric", day:"numeric"})
     const time = new Date()
     let hrs = (time.getHours());
