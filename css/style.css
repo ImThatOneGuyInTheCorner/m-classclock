@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#0000ff, #6b8af0);
+    text-align: center;
+    height: 100vh;
+}
+#countDown {
+    font-size: 10em;
+    text-align: center;
+}
+#dateTime {
+    font-size: 4em;
+    text-align: center;
+}
+#date {
+    margin-bottom: 3%;
+}
+.yellow {
+    background-color: #D2B035;
+    border-radius: 15px;
+    padding: 3%;
+    margin-top: 3%;
+}
+.smaller {
+    padding: 2%;
+    margin-top: 1%;
+}
+#dailySchedule {
+    font-size: 5em;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#until, #date {
+    font-size: 1.5em;
+}
