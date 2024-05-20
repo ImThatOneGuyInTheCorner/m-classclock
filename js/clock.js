@@ -13,6 +13,24 @@ const schedules = {
         Sixth: [14, 14, 0],
         SeventhPassing: [14, 21, 0],
         Seventh: [15, 15, 0],
+    },
+    evenBlock: {
+        SecondPassing: [8, 42, 0],
+        Second: [10, 36, 0],
+        FourthPassing: [10, 43, 0],
+        Fourth: [12, 37, 0],
+        Lunch: [13, 15, 0],
+        SixthPassing: [13, 22, 0],
+        Sixth: [15, 15, 0],
+    },
+    oddBlock: {
+        FirstPassing: [8, 42, 0],
+        First: [10, 36, 0],
+        ThirdPassing: [10, 43, 0],
+        Third: [12, 37, 0],
+        Lunch: [13, 15, 0],
+        SeventhPassing: [13, 22, 0],
+        Seventh: [15, 15, 0],
     }
 }
 
@@ -25,7 +43,7 @@ function count() {
 
     // let target = [12, 37, 0]
     // let target = [10, 45, 0]
-    let target = schedules.standard.Seventh
+    let target = schedules.evenBlock.Fourth
 
     hrsD = (target[0] - parseInt(hrs));
     minD = (target[1] - parseInt(min));
