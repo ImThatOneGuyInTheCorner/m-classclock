@@ -148,7 +148,7 @@ function count() {
     document.getElementById(`dateTime`).innerText = `${theDate}, ${hrs}:${min}:${sec}`;
     
     // Make the text update
-    document.getElementById(`until`).innerText = `Time until lunch ends (${targetHrs}:${targetMin}:${targetSec}):`
+    document.getElementById(`until`).innerText = `Time until Seventh_Period ends (${targetHrs}:${targetMin}:${targetSec}):`
     document.getElementById(`date`).innerText = `Date and Time:`
 }
 
