@@ -90,7 +90,7 @@ function count() {
     let sec = (time.getSeconds());
 
     // Update what it's tracking
-    let target = schedules[schedule].Lunch
+    let target = schedules[schedule].Seventh
 
     hrsD = (target[0] - parseInt(hrs));
     secD = (target[2] - parseInt(sec));
