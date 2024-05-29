@@ -87,13 +87,12 @@ function count() {
     const time = new Date()
     let hrs = (time.getHours());
     let min = (time.getMinutes());
-    let sec = (time.getSeconds());
 
     // Update what it's tracking
     let target = schedules[schedule].Seventh
 
     hrsD = (target[0] - parseInt(hrs));
-    secD = (target[2] - parseInt(sec));
+    secD = (target[2] - parseInt(time.getSeconds()));
     minD = (target[1] - parseInt(min));
     if(secD < 0) {
         minD--
@@ -113,9 +112,6 @@ function count() {
     };
     if (min < 10) {
         min = '0'+min
-    };
-    if (sec < 10) {
-        sec = '0'+sec
     };
     if (hrsD < 10) {
         hrsD = '0'+hrsD
@@ -145,7 +141,7 @@ function count() {
         targetSec = '0'+targetSec
     }
     document.getElementById(`countDown`).innerText = `${hrsD}:${minD}:${secD}`;
-    document.getElementById(`dateTime`).innerText = `${theDate}, ${hrs}:${min}:${sec}`;
+    document.getElementById(`dateTime`).innerText = `${theDate}, ${hrs}:${min}`;
     
     // Make the text update
     document.getElementById(`until`).innerText = `Time until Seventh_Period ends (${targetHrs}:${targetMin}:${targetSec}):`
