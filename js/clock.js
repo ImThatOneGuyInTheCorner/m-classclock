@@ -91,6 +91,7 @@ function count() {
     // Update what it's tracking
     let target = schedules[schedule].Seventh
 
+
     hrsD = (target[0] - parseInt(hrs));
     secD = (target[2] - parseInt(time.getSeconds()));
     minD = (target[1] - parseInt(min));
