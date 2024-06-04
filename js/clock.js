@@ -79,7 +79,7 @@ const schedules = {
         Seventh: [12, 35, 0],
     }
 }
-
+    let period = 0;
 
 function count() {
     let schedule = document.getElementById(`dailySchedule`).innerText
@@ -89,7 +89,34 @@ function count() {
     let min = (time.getMinutes());
 
     // Update what it's tracking
+<<<<<<< Updated upstream
     let target = schedules[schedule].Seventh
+=======
+    let target = schedules[schedule][period]
+
+
+    for(n = 0; n < schedules[schedule].length; n++) {
+        if(hrs > schedules[schedule][period][0]) {
+
+            period += 1;
+            if(period  > schedules[schedule].length) {
+                period = 0;
+            }
+
+        }
+        else if(hrs == schedules[schedule][period][0] && min < schedules[schedule][period][1]) {
+
+        }
+        else if(hrs == schedules[schedule][period][0] && min >= schedules[schedule][period][1]) {
+            period += 1;
+            if(period  > schedules[schedule].length) {
+                period = 0;
+            }
+
+        }
+    }
+
+>>>>>>> Stashed changes
 
 
     hrsD = (target[0] - parseInt(hrs));
