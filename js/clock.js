@@ -167,7 +167,12 @@ function count() {
     document.getElementById(`dateTime`).innerText = `${theDate}, ${hrs}:${min}`;
     
     // Make the text update
-    document.getElementById(`until`).innerText = `Time until Seventh_Period ends (${targetHrs}:${targetMin}:${targetSec}):`
+    if(period == 0) {
+        document.getElementById(`until`).innerText = `Time until school starts (${targetHrs}:${targetMin}):`
+    }
+    else {
+        document.getElementById(`until`).innerText = `Time until this period ends (${targetHrs}:${targetMin}):`
+    }
     document.getElementById(`date`).innerText = `Date and Time:`
 }
 
