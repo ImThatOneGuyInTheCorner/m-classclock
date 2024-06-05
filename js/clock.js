@@ -171,7 +171,7 @@ function count() {
         document.getElementById(`until`).innerText = `Time until school starts (${targetHrs}:${targetMin}):`
     }
     else {
-        document.getElementById(`until`).innerText = `Time until this period ends (${targetHrs}:${targetMin}):`
+        document.getElementById(`until`).innerText = `Time until this period ends, at ${targetHrs}:${targetMin}:`
     }
     document.getElementById(`date`).innerText = `Date and Time:`
 }
