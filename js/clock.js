@@ -53,6 +53,7 @@ const schedules = {
         [9, 18, 0],
         [9, 25, 0],
         [10, 16, 0],
+        [10, 23, 0],
         [10, 54, 0],
         [11, 1, 0],
         [11, 49, 0],
@@ -61,6 +62,7 @@ const schedules = {
         [13, 25, 0],
         [13, 32, 0],
         [14, 20, 0],
+        [14, 27, 0],
         [15, 15, 0],
     ],
     Last_Day: [
@@ -177,3 +179,15 @@ function count() {
 }
 
 setInterval(count, 1000)
+
+const jokeEl = Document.getElementById('joke')
+
+async function generateJoke(){
+    const response = await fetch('https://icanhazdadjoke.com', {
+        headers: {Accept: 'application/json'}
+    })
+
+    const data = await response.json()
+    jokeEl.innerHTML = data.joke
+}
+generateJoke()

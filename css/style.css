@@ -32,6 +32,14 @@ body {
     padding: 2%;
     margin-top: 1%;
 }
+#joke {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 1%;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px;
+}
 #dailySchedule {
     font-size: 5em;
     color: #ffffff;
