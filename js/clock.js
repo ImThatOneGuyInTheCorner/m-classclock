@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    let jokeEl = document.getElementById('joke')
+    async function generateJoke(){
+        const response = await fetch('https://icanhazdadjoke.com', {
+            headers: {Accept: 'application/json'}
+        })
+
+        const data = await response.json()
+        jokeEl.innerHTML = "Joke of the Day™️ --- " + data.joke
+    }
+    generateJoke()
+});
 const schedules = {
     Standard: [
         [8, 30, 0],
@@ -49,8 +61,7 @@ const schedules = {
         [15, 15, 0],
     ],
     Club: [
-        // [8, 30, 0],
-        [21, 45, 0],
+        [8, 30, 0],
         [9, 18, 0],
         [9, 25, 0],
         [10, 16, 0],

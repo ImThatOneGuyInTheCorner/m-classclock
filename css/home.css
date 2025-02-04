@@ -45,6 +45,8 @@ a {
     height: 3em;
     text-align: center;
     justify-content: center;
+    margin-top: 6px;
+    border-radius: 14px;
 }
 .btn {
     height: fit-content;
