@@ -1,12 +1,16 @@
-async function generateJoke(){
-    const response = await fetch('https://icanhazdadjoke.com', {
-        headers: {Accept: 'application/json'}
-    })
+document.addEventListener("DOMContentLoaded", (event) => {
+    let jokeEl = document.getElementById('joke')
+    async function generateJoke(){
+        const response = await fetch('https://icanhazdadjoke.com', {
+            headers: {Accept: 'application/json'}
+        })
 
-    const data = await response.json()
-    jokeEl.innerHTML = data.joke
-}
-generateJoke()
+        const data = await response.json()
+        jokeEl.innerHTML = data.joke
+    }
+    generateJoke()
+});
+
 const schedules = {
     Standard: [
         [8, 30, 0],
@@ -189,4 +193,3 @@ function count() {
 
 setInterval(count, 1000)
 
-const jokeEl = Document.getElementById('joke')
