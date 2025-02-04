@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
 
         const data = await response.json()
-        jokeEl.innerHTML = data.joke
+        jokeEl.innerHTML = "Joke of the Day™️ --- " + data.joke
     }
     generateJoke()
 });
-
 const schedules = {
     Standard: [
         [8, 30, 0],

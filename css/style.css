@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(#0000ff, #8eb2ec);
+    background-image: url("../img/confetti.gif"), radial-gradient(#0000ff, #8eb2ec);
     text-align: center;
     height: 100vh;
 }
